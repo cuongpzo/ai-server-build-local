@@ -1,0 +1,23 @@
+# Core web + UI
+fastapi
+uvicorn
+gradio
+
+# NLP / RAG
+sentence-transformers
+faiss-cpu
+tiktoken
+
+# Document parsers
+pypdf
+python-docx
+beautifulsoup4
+lxml
+
+# LLM backends (optional)
+llama-cpp-python
+openai
+
+# Utilities
+pydantic
+python-dotenv

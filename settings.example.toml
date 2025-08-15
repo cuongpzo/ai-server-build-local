@@ -1,0 +1,23 @@
+# Copy this to settings.toml and edit to your environment.
+[llm]
+# Options: "llama_cpp" (local) or "openai" (API)
+backend = "llama_cpp"
+model_path = "models/llama-2-7b.Q4_K_M.gguf"
+temperature = 0.2
+max_tokens = 512
+n_ctx = 4096
+n_threads = 4
+
+[openai]
+# If backend="openai", set your key in env OPENAI_API_KEY or here
+api_key = ""
+model = "gpt-4o-mini"
+
+[embedding]
+model_name = "intfloat/multilingual-e5-base"
+chunk_size = 1200
+chunk_overlap = 200
+
+[paths]
+input_dir = "data/input_docs"
+index_dir = "data/index"
